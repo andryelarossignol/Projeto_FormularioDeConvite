@@ -1,0 +1,37 @@
+/* Reset e base */
+button {
+  all: unset;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  transition: background-color 0.3s ease;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem; /* opcional: espaçamento acima do botão */
+}
+
+
+/* Botão primário */
+.btn-primary {
+  background-color: var(--navy);
+  color: var(--text-heading);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--navy-hover);
+}
+
+.btn-primary img {
+  width: 1rem;
+  height: 1rem;
+  filter: brightness(0) invert(1); /* deixa o ícone branco */
+}
